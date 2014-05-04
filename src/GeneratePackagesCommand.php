@@ -114,7 +114,7 @@ class GeneratePackagesCommand extends Command
 
             $bucketWriter->write(array('packages' => $packages));
 
-            $includes['packages-' . $bucketName . '.json'] = array(
+            $includes['../packages-' . $bucketName . '.json'] = array(
                 'sha1' => sha1_file($bucketWriter->getPath()),
             );
 
