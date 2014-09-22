@@ -38,14 +38,14 @@ class GeneratePackagesCommand extends Command
         $projectsUrl = 'http://updates.drupal.org/release-history/project-list/all';
         $releasesUrl = 'http://updates.drupal.org/release-history/%s/%d.x';
         $apiVersions = array(6, 7, 8);
-        $numProjects = 0;
+        $numProjects = sizeof($input->getArgument('projects'));
 
         $curl = new RollingCurl();
 
         $progress = $this->getHelperSet()->get('progress');
         $progress->setBarWidth(80);
 
-        if (sizeof($input->getArgument('projects')) > 0) {
+        if ($numProjects > 0) {
             $projectBuckets = array('custom' => $input->getArgument('projects'));
         } else {
             $curl->get($projectsUrl);
