@@ -1,28 +1,29 @@
 {
-    "name": "kasper/drupal-packages-generator",
-    "description": "Generates packages.json files from drupal.org projects",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Kasper Garnaes",
-            "email": "kasper.garnaes@gmail.com"
-        }
-    ],
-    "autoload": {
-      "psr-4": {
-          "kasperg\\DrupalPackagesGenerator\\": "src/"
-      }
+	"name": "kasper/drupal-packages-generator",
+	"description": "Generates packages.json files from drupal.org projects",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Kasper Garnaes",
+			"email": "kasper.garnaes@gmail.com"
+		}
+	],
+	"autoload": {
+		"psr-4": {
+			"kasperg\\DrupalPackagesGenerator\\": "src/",
+			"Drupal\\PackagistBundle\\Parser\\": "src/DrupalPackagist"
+		}
 
-    },
-    "minimum-stability": "dev",
-    "repositories": [
-      {
-        "type": "vcs",
-        "url": "git@github.com:kasperg/drupal-packagist.git"
-      }
-    ],
-    "require": {
-      "espend/drupal-packagist": "dev-master",
-      "chuyskywalker/rolling-curl": "~3.0"
-    }
+	},
+	"minimum-stability": "dev",
+	"require": {
+		"reload/repack": "dev-master",
+		"chuyskywalker/rolling-curl": "~3.0"
+	},
+	"repositories": [
+		{
+			"type": "vcs",
+			"url": "https://github.com/reload/repack"
+		}
+	]
 }

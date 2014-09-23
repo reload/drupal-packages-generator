@@ -1,22 +1,23 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
     ],
-    "hash": "a08510934296d28e2cd876e4e5328f7e",
+    "hash": "eb1522924dc2d6583f7f6b8ab52a9d66",
     "packages": [
         {
             "name": "chuyskywalker/rolling-curl",
-            "version": "3.0.0",
+            "version": "3.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/chuyskywalker/rolling-curl.git",
-                "reference": "410b4074bc617533abfd3645a17ba787fa458522"
+                "reference": "fc1d28c221962f25e9615bd3991dd82732420c8c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/chuyskywalker/rolling-curl/zipball/410b4074bc617533abfd3645a17ba787fa458522",
-                "reference": "410b4074bc617533abfd3645a17ba787fa458522",
+                "url": "https://api.github.com/repos/chuyskywalker/rolling-curl/zipball/fc1d28c221962f25e9615bd3991dd82732420c8c",
+                "reference": "fc1d28c221962f25e9615bd3991dd82732420c8c",
                 "shasum": ""
             },
             "require": {
@@ -36,12 +37,6 @@
             ],
             "authors": [
                 {
-                    "name": "Alexander Makarov",
-                    "email": "sam@rmcreative.ru",
-                    "homepage": "http://rmcreative.ru/",
-                    "role": "Core framework development"
-                },
-                {
                     "name": "Jeff Minard",
                     "homepage": "http://jrm.cc/",
                     "role": "Developer"
@@ -50,6 +45,12 @@
                     "name": "Josh Fraser",
                     "email": "joshfraz@gmail.com",
                     "homepage": "http://joshfraser.com/",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Alexander Makarov",
+                    "email": "sam@rmcreative.ru",
+                    "homepage": "http://rmcreative.ru/",
                     "role": "Developer"
                 }
             ],
@@ -63,7 +64,7 @@
                 "parallel",
                 "requests"
             ],
-            "time": "2014-04-22 03:07:55"
+            "time": "2014-08-30 03:39:25"
         },
         {
             "name": "composer/composer",
@@ -71,12 +72,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/composer.git",
-                "reference": "3677c1ea6905b71daf8c3c4af716d2fe2d6f85bd"
+                "reference": "62b506214640ae66ad88a07240a0bbb0201bd1e3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/composer/zipball/3677c1ea6905b71daf8c3c4af716d2fe2d6f85bd",
-                "reference": "3677c1ea6905b71daf8c3c4af716d2fe2d6f85bd",
+                "url": "https://api.github.com/repos/composer/composer/zipball/62b506214640ae66ad88a07240a0bbb0201bd1e3",
+                "reference": "62b506214640ae66ad88a07240a0bbb0201bd1e3",
                 "shasum": ""
             },
             "require": {
@@ -88,7 +89,7 @@
                 "symfony/process": "~2.1"
             },
             "require-dev": {
-                "phpunit/phpunit": "~3.7.10"
+                "phpunit/phpunit": "~3.7"
             },
             "suggest": {
                 "ext-openssl": "Enabling the openssl extension allows you to access https URLs for repositories and packages",
@@ -114,16 +115,14 @@
             ],
             "authors": [
                 {
-                    "name": "Jordi Boggiano",
-                    "email": "j.boggiano@seld.be",
-                    "homepage": "http://seld.be",
-                    "role": "Developer"
-                },
-                {
                     "name": "Nils Adermann",
                     "email": "naderman@naderman.de",
-                    "homepage": "http://www.naderman.de",
-                    "role": "Developer"
+                    "homepage": "http://www.naderman.de"
+                },
+                {
+                    "name": "Jordi Boggiano",
+                    "email": "j.boggiano@seld.be",
+                    "homepage": "http://seld.be"
                 }
             ],
             "description": "Composer helps you declare, manage and install dependencies of PHP projects, ensuring you have the right stack everywhere.",
@@ -133,54 +132,7 @@
                 "dependency",
                 "package"
             ],
-            "time": "2014-05-03 07:46:50"
-        },
-        {
-            "name": "espend/drupal-packagist",
-            "version": "dev-master",
-            "target-dir": "Drupal/PackagistBundle",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/kasperg/drupal-packagist.git",
-                "reference": "acb16472919769cf77cb3abe5f528825b8127b6b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/kasperg/drupal-packagist/zipball/acb16472919769cf77cb3abe5f528825b8127b6b",
-                "reference": "acb16472919769cf77cb3abe5f528825b8127b6b",
-                "shasum": ""
-            },
-            "require": {
-                "composer/composer": "*",
-                "kriswallsmith/buzz": "dev-master",
-                "php": ">=5.3.2"
-            },
-            "type": "symfony-bundle",
-            "autoload": {
-                "psr-0": {
-                    "Drupal\\PackagistBundle": ""
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Daniel Espendiller",
-                    "homepage": "http://espend.de"
-                }
-            ],
-            "description": "Packagist for Drupal projects",
-            "homepage": "http://espend.de",
-            "keywords": [
-                "composer",
-                "drupal",
-                "packagist"
-            ],
-            "support": {
-                "source": "https://github.com/kasperg/drupal-packagist/tree/master"
-            },
-            "time": "2014-05-04 00:57:13"
+            "time": "2014-09-22 16:04:58"
         },
         {
             "name": "justinrainbow/json-schema",
@@ -188,12 +140,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/justinrainbow/json-schema.git",
-                "reference": "d97cf3ce890fe80f247fc08594a1c8a1029fc7ed"
+                "reference": "87b54b460febed69726c781ab67462084e97a105"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/justinrainbow/json-schema/zipball/d97cf3ce890fe80f247fc08594a1c8a1029fc7ed",
-                "reference": "d97cf3ce890fe80f247fc08594a1c8a1029fc7ed",
+                "url": "https://api.github.com/repos/justinrainbow/json-schema/zipball/87b54b460febed69726c781ab67462084e97a105",
+                "reference": "87b54b460febed69726c781ab67462084e97a105",
                 "shasum": ""
             },
             "require": {
@@ -224,11 +176,6 @@
             ],
             "authors": [
                 {
-                    "name": "Igor Wiedler",
-                    "email": "igor@wiedler.ch",
-                    "homepage": "http://wiedler.ch/igor/"
-                },
-                {
                     "name": "Bruno Prieto Reis",
                     "email": "bruno.p.reis@gmail.com"
                 },
@@ -237,9 +184,12 @@
                     "email": "justin.rainbow@gmail.com"
                 },
                 {
+                    "name": "Igor Wiedler",
+                    "email": "igor@wiedler.ch"
+                },
+                {
                     "name": "Robert Schönthal",
-                    "email": "seroscho@googlemail.com",
-                    "homepage": "http://digitalkaoz.net"
+                    "email": "seroscho@googlemail.com"
                 }
             ],
             "description": "A library to validate a json schema.",
@@ -248,68 +198,70 @@
                 "json",
                 "schema"
             ],
-            "time": "2014-03-05 15:03:52"
+            "time": "2014-08-25 02:48:14"
         },
         {
-            "name": "kriswallsmith/buzz",
+            "name": "reload/repack",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/kriswallsmith/Buzz.git",
-                "reference": "a0f207ac4939978b604be9bec5d5b19baecd8165"
+                "url": "https://github.com/reload/repack.git",
+                "reference": "27ee4d9a28850be9fdae1fb995f80f53ab3df806"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kriswallsmith/Buzz/zipball/a0f207ac4939978b604be9bec5d5b19baecd8165",
-                "reference": "a0f207ac4939978b604be9bec5d5b19baecd8165",
+                "url": "https://api.github.com/repos/reload/repack/zipball/27ee4d9a28850be9fdae1fb995f80f53ab3df806",
+                "reference": "27ee4d9a28850be9fdae1fb995f80f53ab3df806",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.0"
+                "composer/composer": "1.0.*@dev"
             },
             "require-dev": {
-                "phpunit/phpunit": "3.7.*"
-            },
-            "suggest": {
-                "ext-curl": "*"
+                "mikey179/vfsstream": "~1.2",
+                "phpunit/phpunit": "~4.0"
             },
             "type": "library",
             "autoload": {
-                "psr-0": {
-                    "Buzz": "lib/"
+                "psr-4": {
+                    "Reload\\Repack\\": "src/",
+                    "Reload\\Repack\\Test\\": "test/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "authors": [
                 {
-                    "name": "Kris Wallsmith",
-                    "email": "kris.wallsmith@gmail.com",
-                    "homepage": "http://kriswallsmith.net/"
+                    "name": "Kasper Garnaes",
+                    "email": "kasper.garnaes@gmail.com"
                 }
             ],
-            "description": "Lightweight HTTP client",
-            "homepage": "https://github.com/kriswallsmith/Buzz",
+            "description": "Generate static Composer repositories",
             "keywords": [
-                "curl",
-                "http client"
+                "composer",
+                "generator",
+                "package",
+                "repository"
             ],
-            "time": "2014-03-24 21:56:09"
+            "support": {
+                "source": "https://github.com/reload/repack/tree/master",
+                "issues": "https://github.com/reload/repack/issues"
+            },
+            "time": "2014-05-31 20:50:34"
         },
         {
             "name": "seld/jsonlint",
-            "version": "1.1.2",
+            "version": "1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/jsonlint.git",
-                "reference": "7cd4c4965e17e6e4c07f26d566619a4c76f8c672"
+                "reference": "a7bc2ec9520ad15382292591b617c43bdb1fec35"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/jsonlint/zipball/7cd4c4965e17e6e4c07f26d566619a4c76f8c672",
-                "reference": "7cd4c4965e17e6e4c07f26d566619a4c76f8c672",
+                "url": "https://api.github.com/repos/Seldaek/jsonlint/zipball/a7bc2ec9520ad15382292591b617c43bdb1fec35",
+                "reference": "a7bc2ec9520ad15382292591b617c43bdb1fec35",
                 "shasum": ""
             },
             "require": {
@@ -320,8 +272,8 @@
             ],
             "type": "library",
             "autoload": {
-                "psr-0": {
-                    "Seld\\JsonLint": "src/"
+                "psr-4": {
+                    "Seld\\JsonLint\\": "src/Seld/JsonLint/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -332,8 +284,7 @@
                 {
                     "name": "Jordi Boggiano",
                     "email": "j.boggiano@seld.be",
-                    "homepage": "http://seld.be",
-                    "role": "Developer"
+                    "homepage": "http://seld.be"
                 }
             ],
             "description": "JSON Linter",
@@ -343,7 +294,7 @@
                 "parser",
                 "validator"
             ],
-            "time": "2013-11-04 15:41:11"
+            "time": "2014-09-05 15:36:20"
         },
         {
             "name": "symfony/console",
@@ -352,12 +303,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Console.git",
-                "reference": "d12686cea4e1155ed93449c0bca9db223f31bb2d"
+                "reference": "c417d0ac067daa4351112ed25fd4753ea815c840"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Console/zipball/d12686cea4e1155ed93449c0bca9db223f31bb2d",
-                "reference": "d12686cea4e1155ed93449c0bca9db223f31bb2d",
+                "url": "https://api.github.com/repos/symfony/Console/zipball/c417d0ac067daa4351112ed25fd4753ea815c840",
+                "reference": "c417d0ac067daa4351112ed25fd4753ea815c840",
                 "shasum": ""
             },
             "require": {
@@ -365,16 +316,18 @@
             },
             "require-dev": {
                 "psr/log": "~1.0",
-                "symfony/event-dispatcher": "~2.1"
+                "symfony/event-dispatcher": "~2.1",
+                "symfony/process": "~2.1"
             },
             "suggest": {
                 "psr/log": "For using the console logger",
-                "symfony/event-dispatcher": ""
+                "symfony/event-dispatcher": "",
+                "symfony/process": ""
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.5-dev"
+                    "dev-master": "2.6-dev"
                 }
             },
             "autoload": {
@@ -388,19 +341,17 @@
             ],
             "authors": [
                 {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com",
-                    "homepage": "http://fabien.potencier.org",
-                    "role": "Lead Developer"
-                },
-                {
                     "name": "Symfony Community",
                     "homepage": "http://symfony.com/contributors"
+                },
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
                 }
             ],
             "description": "Symfony Console Component",
             "homepage": "http://symfony.com",
-            "time": "2014-04-28 13:26:08"
+            "time": "2014-09-22 13:46:08"
         },
         {
             "name": "symfony/finder",
@@ -409,12 +360,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Finder.git",
-                "reference": "51e3af2081d8497f6552cb3338e8a40541646773"
+                "reference": "a83f67473da5cd3abc453607dd032454189f24c9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Finder/zipball/51e3af2081d8497f6552cb3338e8a40541646773",
-                "reference": "51e3af2081d8497f6552cb3338e8a40541646773",
+                "url": "https://api.github.com/repos/symfony/Finder/zipball/a83f67473da5cd3abc453607dd032454189f24c9",
+                "reference": "a83f67473da5cd3abc453607dd032454189f24c9",
                 "shasum": ""
             },
             "require": {
@@ -423,7 +374,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.5-dev"
+                    "dev-master": "2.6-dev"
                 }
             },
             "autoload": {
@@ -437,19 +388,17 @@
             ],
             "authors": [
                 {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com",
-                    "homepage": "http://fabien.potencier.org",
-                    "role": "Lead Developer"
-                },
-                {
                     "name": "Symfony Community",
                     "homepage": "http://symfony.com/contributors"
+                },
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
                 }
             ],
             "description": "Symfony Finder Component",
             "homepage": "http://symfony.com",
-            "time": "2014-04-28 05:15:04"
+            "time": "2014-09-23 05:25:18"
         },
         {
             "name": "symfony/process",
@@ -458,12 +407,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Process.git",
-                "reference": "8a3edace8e8aabed8992b993bfc13df3b1e836f2"
+                "reference": "1af70850bb6f572daf059a268c04ed6d66f2faee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Process/zipball/8a3edace8e8aabed8992b993bfc13df3b1e836f2",
-                "reference": "8a3edace8e8aabed8992b993bfc13df3b1e836f2",
+                "url": "https://api.github.com/repos/symfony/Process/zipball/1af70850bb6f572daf059a268c04ed6d66f2faee",
+                "reference": "1af70850bb6f572daf059a268c04ed6d66f2faee",
                 "shasum": ""
             },
             "require": {
@@ -472,7 +421,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.5-dev"
+                    "dev-master": "2.6-dev"
                 }
             },
             "autoload": {
@@ -486,19 +435,17 @@
             ],
             "authors": [
                 {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com",
-                    "homepage": "http://fabien.potencier.org",
-                    "role": "Lead Developer"
-                },
-                {
                     "name": "Symfony Community",
                     "homepage": "http://symfony.com/contributors"
+                },
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
                 }
             ],
             "description": "Symfony Process Component",
             "homepage": "http://symfony.com",
-            "time": "2014-04-28 05:15:04"
+            "time": "2014-09-23 05:25:18"
         }
     ],
     "packages-dev": [
@@ -509,7 +456,7 @@
     ],
     "minimum-stability": "dev",
     "stability-flags": {
-        "espend/drupal-packagist": 20
+        "reload/repack": 20
     },
     "platform": [
 
