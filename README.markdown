@@ -1,3 +1,5 @@
+> This project is not supported. Please take a look at http://drupal-composer.org/
+
 # Drupal.org packages.json generator
 
 This project is a small console application which generates [`packages.json` files](https://getcomposer.org/doc/05-repositories.md#composer) from projects on [Drupal.org](https://drupal.org/download) using the updates.drupal.org API.
